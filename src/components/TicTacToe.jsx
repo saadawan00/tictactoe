@@ -17,12 +17,14 @@ const TicTacToe = () => {
 
   useEffect(()=>{
     setWinner(trackWinner(history[stepNumber]))
+    //eslint-disable-next-line
   },[stepNumber])
 
   useEffect(() => {
     winner === 'X' && setWinnerX(winnerX + 1)
     winner === 'O' && setWinnerO(winnerO + 1)
     winner !== null && setOpen(true)
+    // eslint-disable-next-line
   }, [winner])
 
   const handleClick = (i) => {
