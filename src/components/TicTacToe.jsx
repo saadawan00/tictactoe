@@ -62,9 +62,7 @@ const TicTacToe = () => {
       <div className="info-wrapper">
         <div className="reset">
           <Button variant="outlined" color="success" onClick={() => reset(0)}>Reset</Button>
-          <Button variant="outlined" color="success" onClick={() => {
-            setClear(true)
-            }}>
+          <Button variant="outlined" color="success" onClick={() => {setClear(true)}}>
               Reset Scores
           </Button>
         </div>
